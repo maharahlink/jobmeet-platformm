@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobMeet</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Firebase (v8 عشان يكون سهل عليك) -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+</head>
+
+<body>
+
+  <div class="box">
+    <h1>JobMeet 💼</h1>
+
+    <input id="email" type="email" placeholder="الإيميل">
+    <input id="password" type="password" placeholder="كلمة المرور">
+
+    <button onclick="login()">تسجيل دخول</button>
+    <button onclick="register()">إنشاء حساب</button>
+
+    <p id="msg"></p>
+  </div>
+
+  <script src="firebase.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
